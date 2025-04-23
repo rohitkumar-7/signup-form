@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Signup form for user registration" />
+    <title>Signup Form</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <header>
+        <h1>Signup</h1>
+      </header>
+
+      <main>
+        <form id="signupForm">
+          <input
+          class="input-field"
+            type="text"
+            id="fullName"
+            name="fullName"
+            placeholder="Full Name"
+            required
+          />
+          <small></small>
+
+          <input
+          class="input-field"
+
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email"
+            required
+          />
+          <small></small>
+
+          <input
+          class="input-field"
+
+            type="password"
+            id="password"
+            placeholder="Password"
+            name="password"
+            required
+          />
+          <small></small>
+
+          <input
+          class="input-field"
+
+            type="password"
+            id="confirmPassword"
+            placeholder="Confirm Password"
+            name="confirmPassword"
+            required
+          />
+          <small></small>
+
+          <input
+          class="input-field"
+
+            type="date"
+            id="dob"
+            placeholder="MM/DD/YYYY"
+            name="dob"
+            required
+          />
+          <small></small>
+
+          <div class="radio-group">
+            <label
+              ><input type="radio" name="role" value="student" required />
+              Student</label
+            >
+            <label
+              ><input type="radio" name="role" value="employee" required />
+              Employee</label
+            >
+          </div>
+          <small></small>
+
+          <div class="checkbox-group">
+            <label
+              ><input type="checkbox" name="terms" required /> I agree to all
+              the Terms and conditions</label
+            >
+          </div>
+          <small></small>
+
+          <button type="submit">Signup</button>
+          <div id="form-message"></div>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
